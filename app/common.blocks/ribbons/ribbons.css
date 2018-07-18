@@ -1,0 +1,20 @@
+.ribbons {
+  position: relative;
+  box-sizing: content-box;
+  width: 0;
+  height: 30px;
+  top: 0;
+  border: 18px solid #ffa00a;
+  border-top: 0 solid;
+  border-bottom: 13px solid rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.ribbons__title {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Avenir Next Cyr";
+  font-size: 10px;
+  font-weight: 500;
+  left: -8px;
+  top: 3px;
+}

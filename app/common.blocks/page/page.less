@@ -1,0 +1,42 @@
+.page {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transition: all 300ms linear;
+  &__main {
+    width: 100%;
+    transition: all 300ms linear;
+  }
+  &__menu-mobile {
+    width: 0;
+  }
+}
+.page-active {
+  position: fixed;
+  width: 183%;
+  transition: all 300ms linear;
+  &__mobile-menu {
+    height: 100%;
+    transition: all 300ms linear;
+    overflow: scroll;
+    width: 45%;
+  }
+  &__main {
+    position: relative;
+    width: 50%;
+    transition: all 300ms linear;
+    &:after {
+      content: '';
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      top: 0;
+    }
+  }
+}

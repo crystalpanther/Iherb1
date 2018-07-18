@@ -1,0 +1,76 @@
+.blog {
+  margin-bottom: 61px;
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    width: 200px;
+  }
+  &__date {
+    right: 5px;
+    position: absolute;
+  }
+  &__image {
+    height: 150px;
+  }
+  &__text {
+    position: relative;
+    box-sizing: border-box;
+    height: 50px;
+    text-align: center;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -26px;
+      width: 100%;
+      height: 10px;
+      background:
+      linear-gradient(
+        45deg, transparent 33.333%,
+        #fff 33.333%, #fff 66.667%,
+        transparent 66.667%
+      ),
+      linear-gradient(
+        -45deg, transparent 33.333%,
+        #fff 33.333%, #fff 66.667%,
+        transparent 66.667%
+      );
+      background-size: 20px 40px;
+    }
+  }
+  &__title {
+    display: block;
+    margin-top: 16px;
+    text-decoration: none;
+    color: #6a6869;
+    font-family: "Avenir Next Cyr";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.43px;
+  }
+  &__comments {
+    height: 30px;
+  }
+}
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fa-comments {
+    color: #417900;
+    font-size: 13px;
+  }
+  &__numbers {
+    color: #333333;
+    font-family: "Avenir Next Cyr";
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: -0.31px;
+    margin-left: 4px;
+  }
+}

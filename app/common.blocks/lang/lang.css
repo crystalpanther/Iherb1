@@ -1,0 +1,30 @@
+.lang {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.language-select {
+  border-right: solid 1px #ececec;
+  padding-right: 5px;
+}
+.language-select__icon img {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.select__abb {
+  width: 14px;
+  height: 10px;
+  color: #333333;
+  font-family: "Avenir Next Cyr";
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

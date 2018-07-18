@@ -1,0 +1,22 @@
+.personals {
+  position: relative;
+  margin-left: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+.personals .fa {
+  color: white;
+  font-size: 13px;
+}
+.personals__link {
+  color: #ffffff;
+  font-family: "Avenir Next Cyr";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+}
+.personals__link:hover {
+  color: #ffa02f;
+}

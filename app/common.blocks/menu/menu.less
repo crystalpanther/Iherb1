@@ -1,0 +1,36 @@
+/**МЕНЮ**/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+  &__item {
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    &:hover {
+      .menu__link {
+        opacity: 0.7;
+      }
+      .menu__link-yellow {
+        color: mix(deeppink, #ff9c00, 50%);
+      }
+    }
+  }
+  &__link {
+    transition: all 300ms linear;
+    color: #000000;
+    font-family: "Avenir Next Cyr";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    text-decoration: none;
+  }
+  &__link-yellow {
+    text-decoration: none;
+    font-family: "Avenir Next Cyr";
+    color: #ff9c00;
+    font-weight: 500;
+  }
+}

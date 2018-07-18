@@ -1,0 +1,74 @@
+.slider {
+  margin-top: 44px;
+  margin-bottom: 35px;
+  &__title {
+    text-align: center;
+    color: #272727;
+    font-family: "Avenir Next Cyr";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+  }
+}
+.slide {
+  &__container {
+    padding: 0 10px;
+  }
+}
+.slick-slide {
+  img {
+    display: inline;
+  }
+}
+.slider__control {
+  position: absolute;
+  z-index: 888;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  &__prev {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #cecece;
+    background-color: #ffffff;
+    border-radius: 50%;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 0;
+    box-sizing: border-box;
+    .fa {
+      color: #538c00;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+  }
+  &__next {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #cecece;
+    background-color: #ffffff;
+    border-radius: 50%;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 4px 0;
+    .fa {
+      color: #538c00;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+  }
+}

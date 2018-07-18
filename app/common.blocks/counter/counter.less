@@ -1,0 +1,58 @@
+.counters {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  &__item-counter {
+    position: relative;
+    .fa {
+      color: white;
+      font-size: 23px;
+    }
+  }
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  border-radius: 100%;
+  /* Style for "круг" */
+  width: 22px;
+  height: 22px;
+  background-color: #ffa00a;
+}
+.counter-mobile {
+  &__item-counter {
+    position: relative;
+    .item__counter-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: -10px;
+      top: -8px;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      color: white;
+      font-size: 10px;
+      border-radius: 100%;
+      background: #f6bc51; /* Old browsers */
+      background: -moz-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, #f6bc51 1%,#ffa02f 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(45deg, #f6bc51 1%,#ffa02f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6bc51', endColorstr='#ffa02f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    .fa {
+      color: white;
+      font-size: 23px;
+    }
+  }
+}

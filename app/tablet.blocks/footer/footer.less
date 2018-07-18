@@ -1,0 +1,55 @@
+.footer-mobile {
+  display: none;
+  background-color: #f7f4ef;
+  padding-top: 52px;
+  box-sizing: border-box;
+  &__item {
+    width: 100%;
+    &:last-child {
+      .footer-mobile__title {
+        border-bottom: none;
+      }
+    }
+  }
+  &__logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__title {
+    padding: 15px 20px;
+    border-bottom: dotted 1px #333;
+    cursor: pointer;
+
+    &:focus {
+      background-color: #333;
+      color: white;
+    }
+  }
+  &__lists {
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all 300ms linear;
+  }
+  &__lists-active {
+    padding: 0;
+    transform: translateX(50px);
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  &__list {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  &__link {
+    color: #3d3d3d;
+    text-decoration: none;
+    font-family: "Museo Sans Cyrl -300";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.42px;
+  }
+}

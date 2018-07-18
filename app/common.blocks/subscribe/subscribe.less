@@ -1,0 +1,53 @@
+.subscribe {
+  height: 103px;
+  background-color: #528b00;
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    .fa-paper-plane {
+      font-size: 36px;
+      color: white;
+    }
+  }
+  &__text {
+    color: #ffffff;
+    font-family: "Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 16px;
+    width: 122px;
+  }
+  &__input {
+    flex-grow: 3;
+    height: 49px;
+    display: flex;
+    margin-right: 25px;
+    input {
+      background-color: white;
+      height: 100%;
+      flex-grow: 3;
+      padding: 0 7px;
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+  &__button {
+    height: 100%;
+    background-color: #ffa00a;
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    color: #ffffff;
+    font-family: "Avenir Next Cyr";
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
